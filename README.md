@@ -1,1 +1,1 @@
-# drone-cloudflare-workers
+# drone-cloudflare-workers [![Build Status](http://drone.digitalwerber.com/api/badges/digitalwerber/drone-cloudflare-workers/status.svg)](http://drone.digitalwerber.com/digitalwerber/drone-cloudflare-workers)
