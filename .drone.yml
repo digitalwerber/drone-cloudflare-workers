@@ -4,8 +4,14 @@ name: default
 steps:
 - name: build
   image: golang
+  environment:
+    GOOS: linux
+    GOARCH: amd64
+    CGO_ENABLED: 0
   commands:
-    - GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -o cloudflare-workers
+    - go get -u github.com/pkg/errors
+    - go get -u github.com/iancoleman/strcase
+    - go build -o cloudflare-workers
 
 - name: docker  
   image: plugins/docker
