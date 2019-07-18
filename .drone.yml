@@ -22,3 +22,17 @@ steps:
       from_secret: docker_hub_password
     repo: digitalwerber/cloudflare-workers-drone-plugin
     tags: latest
+
+---
+kind: secret
+name: docker_hub_user
+get:
+  path: /int/dockerhub/digitalwerber
+  name: user
+
+---
+kind: secret
+name: docker_hub_password
+get:
+  path: /int/dockerhub/digitalwerber
+  name: password
